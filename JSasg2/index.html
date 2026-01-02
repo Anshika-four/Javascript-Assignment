@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment 2</title>
+    <style>
+        body{
+            width: 50%;
+            gap: 25px;
+            margin: auto;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h2>Add Employee Detail</h2>
+    <form onsubmit="add_emp(event)">
+        <label for="name">Name: </label>
+        <input type="text" id="name">
+        <label for="ID">Employee ID: </label>
+        <input type="number" id="ID">
+        <label for="Date">Date of Joining: </label>
+        <input type="date" id="Date">
+        <label for="salary">Salary: </label>
+        <input type="number" id="salary">
+        <button>Add Employee</button> 
+    </form>
+    <a href="view.html">View Employees</a>
+    <script src="script.js"></script>
+    
+</body>
+</html>

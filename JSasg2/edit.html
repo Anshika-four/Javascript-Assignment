@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignemt 2</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 40%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Edit Employee Detail</h2>
+    <form onsubmit="edit_emp(event)">
+        <label for="new_name">Name: </label>
+        <input type="text" id="new_name">
+        <label for="new_ID">Employee ID: </label>
+        <input type="number" id="new_ID">
+        <label for="new_Date">Date of Joining: </label>
+        <input type="date" id="new_Date">
+        <label for="new_salary">Salary: </label>
+        <input type="number" id="new_salary">
+        <button>Update Employee</button> 
+    </form>
+   
+    <script src="script.js"></script>
+    
+</body>
+</html>
