@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+</head>
+<body>
+    <form onsubmit="addTask()">
+        <label for="title">Title: </label>
+        <input type="text" id="title">
+        <label for="desc">Description: </label>
+        <textarea id="desc"></textarea>
+        <button id="saveBtn" type="button">Update task</button>
+    </form>
+    <script>
+        const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+        const index = localStorage.getItem("editIndex");
+
+        const task = tasks[index];
+
+        document.getElementById("title").value = task.title;
+        document.getElementById("desc").value = task.description;
+
+        document.getElementById("saveBtn").addEventListener("click", (e) => {
+            e.preventDefault();
+            task.title = document.getElementById("title").value;
+            task.description = document.getElementById("desc").value;
+
+            localStorage.setItem("tasks", JSON.stringify(tasks));
+            alert("Task updated!");
+            window.location.href = "index.html";
+        });
+    </script>
+    
+</body>
+</html>

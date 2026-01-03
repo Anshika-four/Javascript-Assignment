@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <style>
+        body{
+            display :flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        table{
+            justify-content: center;
+        }
+        button{
+            margin-bottom: 20px;
+        }
+        td{
+            width: 200px;
+            height: 40px;
+            font-size: 20px;
+            
+        }
+        th{
+            font-size: 20px;
+            width: 200px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h2>TO DO LIST</h2>
+    <a href="create.html"><button>Add task</button></a>
+
+    <table border=1 id="view">
+        <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Completed</th>
+        <th>Pending</th>
+        </tr>
+    </table>
+
+    <p>Total Tasks: <span id="totalCount">0</span></p>
+    <p>Pending Tasks: <span id="pendingCount">0</span></p>
+    <p>Completed Tasks: <span id="completedCount">0</span></p>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
