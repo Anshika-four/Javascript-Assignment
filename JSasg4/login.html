@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User authentication</title>
+    <style>
+        form{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form id="loginform">
+        <label for="email">Email</label>
+        <input id="email" type="email">
+        <label for="password">Password</label>
+        <input id="password" type="password">
+        <button type="submit">Log In</button>
+    </form>
+    <p>Not a user ? <a href="signup.html">Sign in</a></p>
+    <script src="script.js"></script>
+</body>
+</html>
