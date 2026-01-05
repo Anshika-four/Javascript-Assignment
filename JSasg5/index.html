@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Product list</title>
+    <style>
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            
+        }
+        table, td, th{
+            border: 1px solid black;
+        }
+        td, th{
+            height: 30px;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        .search-box{
+            display: flex;
+            border: 1px solid grey;
+            gap: 10px;
+            padding: 3px;
+        }
+        input{
+            width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+
+    
+    <div class="options">
+        <ul>
+            <li><a href="add.html"><button>Add Product</button></a></li>
+            <li class="search-box"><input placeholder="Search product" id="search"><i class="fa-solid fa-magnifying-glass" id="search-btn"></i></li>
+           <li>
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Footwear">Footwear</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Sports & Fitness">Sports & Fitness</option>
+                <option value="Home & Kitchen">Home & Kitchen</option>
+                <option value="Home & Lighting">Home & Lighting</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Home Decor">Home Decor</option>
+                <option value="Stationery">Stationery</option>
+                <option value="Books">Books</option>
+            </select>
+            </li>
+
+            <li><select id="price-sort">
+                <option value="">--Sort--</option>
+                <option value="lowToHigh">Price - Low to High</option>
+                <option value="HighToLow">Price - High to Low</option>
+            </select></li>
+        </ul>
+    </div>
+    <main>
+        <h2>Products List</h2>
+        <table id="product-table"></table>
+    </main>
+    <script src="script.js"></script>
+    
+</body>
+</html>

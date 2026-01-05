@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product list</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form{
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form id="add-items">
+        <h2>Add Product</h2>
+        <label for="name">Product Name </label>
+        <input type="text" id="name">
+        <label for="category">Category</label>
+        <input type="text" id="category">
+        <label for="price">Price</label>
+        <input type="number" id="price">
+        <label for="stock">Stock</label>
+        <input type="number" id="stock">
+        <button>Add</button>
+    </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
